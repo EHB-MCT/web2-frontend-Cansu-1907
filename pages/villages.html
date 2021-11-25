@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/index.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Animal Crossing Village Simulator</title>
+</head>
+<body>
+    <main id="villages-main">
+        <nav>
+            <section id="nav-button-container">
+                <a href="./villages.html">
+                    <div id="nav-button">
+                        <p>Villages!</p>
+                        <img src="../images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+            <section id="nav-logo-container">
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+            </section>
+            <section id="nav-button-container">
+                <a href="./login.html">
+                    <div id="nav-button">
+                        <p>Log in!</p>
+                        <img src="../images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+        </nav>
+        <div id="user-info">
+            <p>You are logged in as: <b>Username</b></p>
+            <figure>
+                <img src="../images/profile.png" alt="">
+            </figure>
+        </div>
+        <section id="villages-container">
+
+
+            <!--              before login                     -->
+
+            <!-- <div class="half-screen-text-container">
+                <h1>First create an account</h1>
+                <p class="dark-text-on-whiteBG space-around">To be able to create a village, you first have to log in with an account. Please Go press the "Log In" button on the navigation or just press the button down bellow! </p>
+                <div id="villages-showing-container"></div>
+                <button>log In</button>
+            </div>
+            <figure class="half-screen-figure-container">
+                <div class='villages-image' id="before-login-image"></div>
+            </figure> -->
+
+
+            <!--              after login                     -->
+
+            <div class="half-screen-text-container">
+                <h1>Your villages!</h1>
+                <p>Hello there! Here you can create your villages. There is more, you can also edit them, delete them and also put a Heart to indicate that those are your favorite villages.</p>
+                <div id="villages-showing-container">
+                    <div>
+                        <p>Village</p>
+                        <p>dd/mm/yyyy</p>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471.7 471.7" style="enable-background:new 0 0 471.7 471.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#008A61;}
+</style>
+<g id="fill">
+	<path class="st0" d="M235.9,95c0,0-43.7-62.6-116.9-49c0,0-145,28-87,170l203.9,211l92.1-93l90-94l32-43v-80l-47-61.4l-58-11.5
+		l-60,11.5L235.9,95z"/>
+</g>
+<g id="border">
+	<g>
+		<path class="st1" d="M433.6,67c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3L236,80l-13.1-13.1
+			c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2C13.5,91.4-0.1,124.2,0,159.1c0,34.9,13.7,67.6,38.4,92.3
+			l187.8,187.8c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4C471.8,124.5,458.3,91.7,433.6,67z
+			 M414.4,232.7l-178.7,178L57.4,232.4C37.8,212.8,27,186.8,27,159.1s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3
+			c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4c19.6-19.6,45.7-30.4,73.3-30.4
+			c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3C444.8,187.1,434,213.1,414.4,232.7z"/>
+	</g>
+</g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p>Village</p>
+                        <p>dd/mm/yyyy</p>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471.7 471.7" style="enable-background:new 0 0 471.7 471.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#008A61;}
+</style>
+<g id="fill">
+	<path class="st0" d="M235.9,95c0,0-43.7-62.6-116.9-49c0,0-145,28-87,170l203.9,211l92.1-93l90-94l32-43v-80l-47-61.4l-58-11.5
+		l-60,11.5L235.9,95z"/>
+</g>
+<g id="border">
+	<g>
+		<path class="st1" d="M433.6,67c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3L236,80l-13.1-13.1
+			c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2C13.5,91.4-0.1,124.2,0,159.1c0,34.9,13.7,67.6,38.4,92.3
+			l187.8,187.8c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4C471.8,124.5,458.3,91.7,433.6,67z
+			 M414.4,232.7l-178.7,178L57.4,232.4C37.8,212.8,27,186.8,27,159.1s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3
+			c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4c19.6-19.6,45.7-30.4,73.3-30.4
+			c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3C444.8,187.1,434,213.1,414.4,232.7z"/>
+	</g>
+</g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p>Village</p>
+                        <p>dd/mm/yyyy</p>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471.7 471.7" style="enable-background:new 0 0 471.7 471.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#008A61;}
+</style>
+<g id="fill">
+	<path class="st0" d="M235.9,95c0,0-43.7-62.6-116.9-49c0,0-145,28-87,170l203.9,211l92.1-93l90-94l32-43v-80l-47-61.4l-58-11.5
+		l-60,11.5L235.9,95z"/>
+</g>
+<g id="border">
+	<g>
+		<path class="st1" d="M433.6,67c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3L236,80l-13.1-13.1
+			c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2C13.5,91.4-0.1,124.2,0,159.1c0,34.9,13.7,67.6,38.4,92.3
+			l187.8,187.8c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4C471.8,124.5,458.3,91.7,433.6,67z
+			 M414.4,232.7l-178.7,178L57.4,232.4C37.8,212.8,27,186.8,27,159.1s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3
+			c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4c19.6-19.6,45.7-30.4,73.3-30.4
+			c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3C444.8,187.1,434,213.1,414.4,232.7z"/>
+	</g>
+</g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p>Village</p>
+                        <p>dd/mm/yyyy</p>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 471.7 471.7" style="enable-background:new 0 0 471.7 471.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#008A61;}
+</style>
+<g id="fill">
+	<path class="st0" d="M235.9,95c0,0-43.7-62.6-116.9-49c0,0-145,28-87,170l203.9,211l92.1-93l90-94l32-43v-80l-47-61.4l-58-11.5
+		l-60,11.5L235.9,95z"/>
+</g>
+<g id="border">
+	<g>
+		<path class="st1" d="M433.6,67c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3L236,80l-13.1-13.1
+			c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2C13.5,91.4-0.1,124.2,0,159.1c0,34.9,13.7,67.6,38.4,92.3
+			l187.8,187.8c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4C471.8,124.5,458.3,91.7,433.6,67z
+			 M414.4,232.7l-178.7,178L57.4,232.4C37.8,212.8,27,186.8,27,159.1s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3
+			c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4c19.6-19.6,45.7-30.4,73.3-30.4
+			c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3C444.8,187.1,434,213.1,414.4,232.7z"/>
+	</g>
+</g>
+                        </svg>
+                    </div>
+                </div>
+                <button>Add village</button>
+            </div>
+            <figure class="half-screen-figure-container">
+                <div class='villages-image' id="after-login-image"></div>
+            </figure>
+
+
+
+        </section>
+        <footer id="footer-other-than-homepage">
+            <p>Copyright © Cansu Bilal - Animal Crossing Village Simulator</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
+
+
+
+<!-- after logged in:
+
+
+<div id="villages-after-login-container">
+    <h1>Your villages!</h1>
+    <p>Hello there! Here you can create your villages. There is more, you can also edit them, delete them and also put a Heart to indicate that those are your favorite villages.</p>
+    <button>Add village</button>
+</div>
+
+
+
+-->
