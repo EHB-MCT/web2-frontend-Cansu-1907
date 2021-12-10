@@ -27,6 +27,7 @@ h1 {
   color: #008a61;
   font-size: 40px;
   font-family: FinkHeavy;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -145,6 +146,12 @@ button {
   font-family: FinkHeavy;
   font-size: 17px;
   margin-top: 35px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background-color: #05cc91;
 }
 
 .text-container {
@@ -189,7 +196,7 @@ button {
   background-color: #008a61;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0px 30px 0 15px;
+  margin: 0 30px 0 15px;
 }
 
 #user-info figure img {
@@ -211,6 +218,10 @@ button {
   margin-top: -10px;
   padding: 7%;
   display: flex;
+}
+
+#villages-container p {
+  color: #73654b;
 }
 
 #footer-other-than-homepage {
@@ -235,8 +246,8 @@ button {
 }
 
 .half-screen-text-container button {
-  width: 200px;
-  padding: 17px 0;
+  width: 170px;
+  padding: 15px 0;
 }
 
 .half-screen-figure-container {
@@ -259,11 +270,16 @@ button {
 
 #after-login-image {
   background-image: url("../images/after-login.jpeg");
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.308);
 }
 
 #villages-showing-container {
   height: 220px;
   overflow: scroll;
+}
+
+#villages-showing-container p {
+  color: #008a61;
 }
 
 #villages-showing-container div {
@@ -294,4 +310,116 @@ button {
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+form input {
+  background-color: white;
+  border-radius: 20px;
+  border: solid #008a61 1px;
+  padding: 0 20px;
+  height: 50px;
+  width: 80%;
+}
+
+form button {
+  margin-top: 0;
+}
+
+form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #008a61;
+  font-size: 15px;
+}
+form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #008a61;
+  font-size: 15px;
+}
+form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #008a61;
+  font-size: 15px;
+}
+form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #008a61;
+  font-size: 15px;
+}
+
+.login-carousel {
+  width: 50%;
+  padding-left: 13%;
+  margin: 0;
+}
+
+#carousel-container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.308);
+}
+
+#carousel-images-container {
+  width: 85%;
+  height: 430px;
+  border-radius: 30px;
+  background-color: turquoise;
+  margin-top: 7.5%;
+  overflow: hidden;
+}
+
+#carousel-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#carousel-image-container img {
+  height: 100%;
+  position: relative;
+  left: -40px;
+}
+
+#carousel-navigation {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.carousel-btn {
+  width: 20px;
+  height: 20px;
+  background-color: #008a61;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #05cc91;
+}
+
+.active-carousel {
+  background-color: #05cc91;
+}
+
+.to-register-page-link {
+  text-decoration: none;
+  color: #008a61;
 }
