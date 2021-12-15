@@ -8,6 +8,10 @@
   src: url("../fonts/FOT-RodinBokutoh\ Pro\ M.otf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +25,10 @@ p {
   font-family: Bokutoh;
   line-height: 1.7;
   color: #575757;
+}
+
+.shadow {
+  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.308);
 }
 
 h1 {
@@ -270,7 +278,6 @@ button:hover {
 
 #after-login-image {
   background-image: url("../images/after-login.jpeg");
-  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.308);
 }
 
 #villages-showing-container {
@@ -318,7 +325,7 @@ form {
   row-gap: 20px;
 }
 
-form input {
+input {
   background-color: white;
   border-radius: 20px;
   border: solid #008a61 1px;
@@ -331,22 +338,22 @@ form button {
   margin-top: 0;
 }
 
-form ::-webkit-input-placeholder {
+* ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #008a61;
   font-size: 15px;
 }
-form ::-moz-placeholder {
+* ::-moz-placeholder {
   /* Firefox 19+ */
   color: #008a61;
   font-size: 15px;
 }
-form :-ms-input-placeholder {
+* :-ms-input-placeholder {
   /* IE 10+ */
   color: #008a61;
   font-size: 15px;
 }
-form :-moz-placeholder {
+* :-moz-placeholder {
   /* Firefox 18- */
   color: #008a61;
   font-size: 15px;
@@ -367,7 +374,6 @@ form :-moz-placeholder {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 0.308);
 }
 
 #carousel-images-container {
@@ -422,4 +428,207 @@ form :-moz-placeholder {
 .to-register-page-link {
   text-decoration: none;
   color: #008a61;
+}
+
+#new-village-container {
+  background-color: #e0ffea;
+  width: 100%;
+  height: auto;
+  border-radius: 75px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+#new-village-container input {
+  width: 450px;
+  text-align: center;
+}
+
+.scroll-p {
+  color: #008a61;
+  font-family: FinkHeavy;
+  font-size: 25px;
+  margin: 0;
+}
+
+#s1 {
+  height: 90vh;
+  padding: 10% 7% 1% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s2,
+#s3,
+#s4,
+#s5,
+#s6,
+#s7,
+#s8 {
+  height: 100vh;
+  padding: 10% 7% 1% 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s1 > div,
+#s2 > div,
+#s3 > div,
+#s4 > div,
+#s5 > div,
+#s6 > div,
+#s7 > div,
+#s8 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#s5 h1,
+#s6 h1,
+#s7 h1,
+#s8 h1 {
+  margin-top: 0;
+}
+
+#s8 button {
+  margin: 0 0 20px 0;
+}
+
+.village-name-container {
+  margin-bottom: 100px;
+  row-gap: 30px;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.add-container div {
+  width: 18%;
+  height: 230px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.arrow-down-icon {
+  width: 60px;
+}
+
+.added-item-img {
+  width: 50%;
+  transform: scale(1.25);
+}
+
+.villager-img {
+  width: 100%;
+}
+
+.add-icon {
+  width: 80px;
+}
+
+.catch-item-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.catch-item {
+  width: 40%;
+  height: 400px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.fish-bg {
+  background-image: url("../images/fish-here.png");
+}
+
+.bug-bg {
+  background-image: url("../images/bug-here.png");
+}
+
+.sea-bg {
+  background-image: url("../images/sea-here.png");
+}
+
+.fossil-bg {
+  background-image: url("../images/fossil-here.png");
+}
+
+.add-item {
+  width: 60%;
+  height: 400px;
+  /* background-color: tomato; */
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 4%; */
+}
+
+.add-item div {
+  width: 32%;
+  height: 48%;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#footer-new-village {
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 1920px) {
+  #user-info {
+    top: 40px;
+    right: 190px;
+  }
+
+  #user-info p {
+    font-size: 16px;
+  }
+
+  #user-info figure {
+    width: 50px;
+    margin: 0 30px;
+  }
+
+  #nav-button img {
+    margin-top: 3px;
+  }
+
+  .add-container div {
+    height: 270px;
+  }
+
+  .add-item {
+    height: 500px;
+  }
+
+  .catch-item {
+    height: 500px;
+  }
 }
