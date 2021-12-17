@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/index.js"></script>
+    <script type="module" src="../scripts/newVillage.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <title>Animal Crossing Village Simulator</title>
 </head>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="village-name-container">
                     <h1>Name your village!</h1>
-                    <input type="text" placeholder="Village Name">
+                    <input id="village-name" type="text" placeholder="Village Name">
                 </div>
                 <div>
                     <a href="#s2"><img class="arrow-down-icon" src="../images/arrow-down.svg"></a>
@@ -57,21 +57,11 @@
                     <h1>Select your villagers!</h1>
                 </div>
                 <div class="add-container">
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
+                    <div id="villager1" class="add-btn villager shadow"></div>
+                    <div id="villager2" class="add-btn villager shadow"></div>
+                    <div id="villager3" class="add-btn villager shadow"></div>
+                    <div id="villager4" class="add-btn villager shadow"></div>
+                    <div id="villager5" class="add-btn villager shadow"></div>
                 </div>
                 <div>
                     <a href="#s3"><img class="arrow-down-icon" src="../images/arrow-down.svg"></a>
@@ -83,21 +73,11 @@
                     <h1>Select your furniture!</h1>
                 </div>
                 <div class="add-container">
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
+                    <div id="furniture1" class="add-btn furniture shadow"></div>
+                    <div id="furniture2" class="add-btn furniture shadow"></div>
+                    <div id="furniture3" class="add-btn furniture shadow"></div>
+                    <div id="furniture4" class="add-btn furniture shadow"></div>
+                    <div id="furniture5" class="add-btn furniture shadow"></div>
                 </div>
                 <div>
                     <a href="#s4"><img class="arrow-down-icon" src="../images/arrow-down.svg"></a>
@@ -109,21 +89,11 @@
                     <h1>Select your wall-mounted furniture!</h1>
                 </div>
                 <div class="add-container">
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
-                    <div class="shadow">
-                        <img class="add-icon" src="../images/add-icon.svg" alt="">
-                    </div>
+                    <div id="wall-furniture1" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture2" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture3" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture4" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture5" class="add-btn wall shadow"></div>
                 </div>
                 <div>
                     <a href="#s5"><img class="arrow-down-icon" src="../images/arrow-down.svg"></a>
@@ -135,16 +105,14 @@
                     <h1>Catch your fishes!</h1>
                 </div>
                 <div class="catch-item-container">
-                    <div class="catch-item fish-bg shadow"></div>
-                    <div class="add-item">
-                        <div class="shadow">
-                            <img class="added-item-img" src="../images/fish.png" alt="">
-                        </div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
+                    <div id="fish" class="catch-item fish-bg shadow"></div>
+                    <div id="fishes-container" class="add-item">
+                        <div id="fish1" class="shadow"></div>
+                        <div id="fish2" class="shadow"></div>
+                        <div id="fish3" class="shadow"></div>
+                        <div id="fish4" class="shadow"></div>
+                        <div id="fish5" class="shadow"></div>
+                        <div id="fish6" class="shadow"></div>
                     </div>
                 </div>
                 <div>
@@ -157,16 +125,14 @@
                     <h1>Catch your bugs!</h1>
                 </div>
                 <div class="catch-item-container">
-                    <div class="catch-item bug-bg shadow"></div>
+                    <div id="bugs" class="catch-item bug-bg shadow"></div>
                     <div class="add-item">
-                        <div class="shadow">
-                            <img class="added-item-img" src="../images/bug.png" alt="">
-                        </div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
+                        <div id="bugs1" class="shadow"></div>
+                        <div id="bugs2" class="shadow"></div>
+                        <div id="bugs3" class="shadow"></div>
+                        <div id="bugs4" class="shadow"></div>
+                        <div id="bugs5" class="shadow"></div>
+                        <div id="bugs6" class="shadow"></div>
                     </div>
                 </div>
                 <div>
@@ -179,16 +145,14 @@
                     <h1>Catch your sea creatures!</h1>
                 </div>
                 <div class="catch-item-container">
-                    <div class="catch-item sea-bg shadow"></div>
+                    <div id="sea" class="catch-item sea-bg shadow"></div>
                     <div class="add-item">
-                        <div class="shadow">
-                            <img class="added-item-img" src="../images/sea.png" alt="">
-                        </div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
+                        <div id="sea1" class="shadow"></div>
+                        <div id="sea2" class="shadow"></div>
+                        <div id="sea3" class="shadow"></div>
+                        <div id="sea4" class="shadow"></div>
+                        <div id="sea5" class="shadow"></div>
+                        <div id="sea6" class="shadow"></div>
                     </div>
                 </div>
                 <div>
@@ -198,29 +162,61 @@
             </section>
             <section id="s8">
                 <div>
-                    <h1>Catch your sea creatures!</h1>
+                    <h1>Find your fossils!</h1>
                 </div>
                 <div class="catch-item-container">
-                    <div class="catch-item fossil-bg shadow"></div>
+                    <div id="fossils" class="catch-item fossil-bg shadow"></div>
                     <div class="add-item">
-                        <div class="shadow">
-                            <img class="added-item-img" src="../images/fossil.png" alt="">
-                        </div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
+                        <div id="fossils1" class="shadow"></div>
+                        <div id="fossils2" class="shadow"></div>
+                        <div id="fossils3" class="shadow"></div>
+                        <div id="fossils4" class="shadow"></div>
+                        <div id="fossils5" class="shadow"></div>
+                        <div id="fossils6" class="shadow"></div>
                     </div>
                 </div>
                 <div>
-                    <button>Create</button>
+                    <button id="create-btn">Create</button>
                 </div>
             </section>
         </section>
         <footer id="footer-new-village">
-            <p>Copyright © Cansu Bilal - Animal Crossing Village Simulator</p>
+            <p>Copyright Â© Cansu Bilal - Animal Crossing Village Simulator</p>
         </footer>
+
+        <div id="villagerModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="villagers-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="furnitureModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="furniture-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="wallModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="wall-furniture-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
