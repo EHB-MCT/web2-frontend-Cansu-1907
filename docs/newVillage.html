@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./scripts/newVillage.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Animal Crossing Village Simulator</title>
+</head>
+<body>
+    <main id="villages-main">
+        <nav>
+            <section id="nav-button-container">
+                <a href="./villages.html">
+                    <div id="nav-button">
+                        <p>Villages!</p>
+                        <img src="./images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+            <section id="nav-logo-container">
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+            </section>
+            <section id="nav-button-container">
+                <a href="./login.html">
+                    <div id="nav-button">
+                        <p>Log in!</p>
+                        <img src="./images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+        </nav>
+        <div id="user-info">
+            <p>You are logged in as: <b>Username</b></p>
+            <figure>
+                <img src="./images/profile.png" alt="">
+            </figure>
+        </div>
+        <section id="new-village-container">
+            <section id="s1">
+                <div>
+                    <h1>Create your village!</h1>
+                    <p>Let us create your village here! First start with selecting <br>your villagers and continue until you select the needed<br>items.</p>
+                </div>
+                <div class="village-name-container">
+                    <h1>Name your village!</h1>
+                    <input id="village-name" type="text" placeholder="Village Name">
+                </div>
+                <div>
+                    <a href="#s2"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s2">
+                <div>
+                    <h1>Select your villagers!</h1>
+                </div>
+                <div class="add-container">
+                    <div id="villager1" class="add-btn villager shadow"></div>
+                    <div id="villager2" class="add-btn villager shadow"></div>
+                    <div id="villager3" class="add-btn villager shadow"></div>
+                    <div id="villager4" class="add-btn villager shadow"></div>
+                    <div id="villager5" class="add-btn villager shadow"></div>
+                </div>
+                <div>
+                    <a href="#s3"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s3">
+                <div>
+                    <h1>Select your furniture!</h1>
+                </div>
+                <div class="add-container">
+                    <div id="furniture1" class="add-btn furniture shadow"></div>
+                    <div id="furniture2" class="add-btn furniture shadow"></div>
+                    <div id="furniture3" class="add-btn furniture shadow"></div>
+                    <div id="furniture4" class="add-btn furniture shadow"></div>
+                    <div id="furniture5" class="add-btn furniture shadow"></div>
+                </div>
+                <div>
+                    <a href="#s4"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s4">
+                <div>
+                    <h1>Select your wall-mounted furniture!</h1>
+                </div>
+                <div class="add-container">
+                    <div id="wall-furniture1" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture2" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture3" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture4" class="add-btn wall shadow"></div>
+                    <div id="wall-furniture5" class="add-btn wall shadow"></div>
+                </div>
+                <div>
+                    <a href="#s5"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s5">
+                <div>
+                    <h1>Catch your fishes!</h1>
+                </div>
+                <div class="catch-item-container">
+                    <div id="fish" class="catch-item fish-bg shadow"></div>
+                    <div id="fishes-container" class="add-item">
+                        <div id="fish1" class="shadow"></div>
+                        <div id="fish2" class="shadow"></div>
+                        <div id="fish3" class="shadow"></div>
+                        <div id="fish4" class="shadow"></div>
+                        <div id="fish5" class="shadow"></div>
+                        <div id="fish6" class="shadow"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#s6"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s6">
+                <div>
+                    <h1>Catch your bugs!</h1>
+                </div>
+                <div class="catch-item-container">
+                    <div id="bugs" class="catch-item bug-bg shadow"></div>
+                    <div class="add-item">
+                        <div id="bugs1" class="shadow"></div>
+                        <div id="bugs2" class="shadow"></div>
+                        <div id="bugs3" class="shadow"></div>
+                        <div id="bugs4" class="shadow"></div>
+                        <div id="bugs5" class="shadow"></div>
+                        <div id="bugs6" class="shadow"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#s7"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s7">
+                <div>
+                    <h1>Catch your sea creatures!</h1>
+                </div>
+                <div class="catch-item-container">
+                    <div id="sea" class="catch-item sea-bg shadow"></div>
+                    <div class="add-item">
+                        <div id="sea1" class="shadow"></div>
+                        <div id="sea2" class="shadow"></div>
+                        <div id="sea3" class="shadow"></div>
+                        <div id="sea4" class="shadow"></div>
+                        <div id="sea5" class="shadow"></div>
+                        <div id="sea6" class="shadow"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#s8"><img class="arrow-down-icon" src="./images/arrow-down.svg"></a>
+                    <p class="scroll-p">scroll</p>
+                </div>
+            </section>
+            <section id="s8">
+                <div>
+                    <h1>Find your fossils!</h1>
+                </div>
+                <div class="catch-item-container">
+                    <div id="fossils" class="catch-item fossil-bg shadow"></div>
+                    <div class="add-item">
+                        <div id="fossils1" class="shadow"></div>
+                        <div id="fossils2" class="shadow"></div>
+                        <div id="fossils3" class="shadow"></div>
+                        <div id="fossils4" class="shadow"></div>
+                        <div id="fossils5" class="shadow"></div>
+                        <div id="fossils6" class="shadow"></div>
+                    </div>
+                </div>
+                <div>
+                    <button id="create-btn">Create</button>
+                </div>
+            </section>
+        </section>
+        <footer id="footer-new-village">
+            <p>Copyright © Cansu Bilal - Animal Crossing Village Simulator</p>
+        </footer>
+
+        <div id="villagerModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="villagers-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="furnitureModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="furniture-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="wallModal" class="modal">
+            <div class="modal-content">
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+                <div id="wall-furniture-container" class="items-container">
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

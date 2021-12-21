@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./scripts/villages.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Animal Crossing Village Simulator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <main id="villages-main">
+        <nav>
+            <section id="nav-button-container">
+                <a href="./villages.html">
+                    <div id="nav-button">
+                        <p>Villages!</p>
+                        <img src="./images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+            <section id="nav-logo-container">
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+            </section>
+            <section id="nav-button-container">
+                <a href="./login.html">
+                    <div id="nav-button">
+                        <p>Log in!</p>
+                        <img src="./images/buttonImg.png" alt="">
+                    </div>
+                </a>
+            </section>
+        </nav>
+        <div id="user-info">
+            <p>You are logged in as: <b>Username</b></p>
+            <figure>
+                <img src="./images/profile.png" alt="">
+            </figure>
+        </div>
+        <section id="villages-container">
+            <!--              before login                     -->
+            <div id="before-login-container" class="half-screen-text-container">
+                <h1>First create an account</h1>
+                <p class="dark-text-on-whiteBG space-around">To be able to create a village, you first have to log in with an account. Please Go press the "Log In" button on the navigation or just press the button down bellow! </p>
+                <button id="login-btn">log In</button>
+            </div>
+
+            <!--              after login                     -->
+            <div id="after-login-container" class="half-screen-text-container">
+                <h1>Your villages!</h1>
+                <p>Hello there! Here you can create your villages. There is more, you can also edit them, delete them and also put a Heart to indicate that those are your favorite villages.</p>
+                <div id="villages-showing-container">
+                </div>
+                <button id="add-village-btn">Add village</button>
+            </div>
+            <figure class="half-screen-figure-container">
+                <div class='villages-image shadow' id="after-login-image"></div>
+            </figure>
+        </section>
+        <footer id="footer-other-than-homepage">
+            <p>Copyright © Cansu Bilal - Animal Crossing Village Simulator</p>
+        </footer>
+    </main>
+</body>
+</html>
