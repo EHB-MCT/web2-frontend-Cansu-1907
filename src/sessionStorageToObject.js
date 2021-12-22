@@ -25,10 +25,10 @@ export default async function sessionStorageToObject(itemName, amount) {
     if (itemName == "furniture" || itemName == "wall-furniture") {
       obj[a] = `https://acnhapi.com/v1/images/furniture/${obj[a]}`;
     } else if (itemName == "villager") {
-      let data = await getData(`http://acnhapi.com/v1/${itemName}s/${obj[a]}`);
+      let data = await getData(`https://acnhapi.com/v1/${itemName}s/${obj[a]}`);
       obj[a] = data;
     } else {
-      let data = await getData(`http://acnhapi.com/v1/${itemName}/${obj[a]}`);
+      let data = await getData(`https://acnhapi.com/v1/${itemName}/${obj[a]}`);
       obj[a] = data;
     }
   }

@@ -3,7 +3,7 @@ import getData from "./getData.js";
 // This function is used to catch a random fish, bug, sea and to find a random fossil
 export default async function catchItem(itemName) {
   // We fetch the url with the right parameter -> fish, bugs, sea or fossils
-  let data = await getData(`http://acnhapi.com/v1/${itemName}/`);
+  let data = await getData(`https://acnhapi.com/v1/${itemName}/`);
   let btn = document.getElementById(itemName);
   // This counter variable is used to prevent catching more than 6 items (fishes, bugs, sea creatures or fossils)
   let counter = 1;

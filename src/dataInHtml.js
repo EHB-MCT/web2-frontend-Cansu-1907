@@ -3,7 +3,7 @@ import getData from "./getData.js";
 // this function needs the name of the item that has to be fetched
 // and the name of the container. The container will contain the data as img tags
 export default async function dataInHtml(itemName, containerName) {
-  let data = await getData(`http://acnhapi.com/v1/${itemName}`);
+  let data = await getData(`https://acnhapi.com/v1/${itemName}`);
   let htmlString = "";
 
   // The 'houseware' & 'wallmounted' -> items have a different api structure than 'villagers'
